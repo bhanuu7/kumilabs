@@ -1,0 +1,133 @@
+.homeBg {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 100%;
+  background-color: #ffff;
+}
+.headerContainer {
+  display: flex;
+  background-color: #ffe475;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  box-sizing: border-box;
+  padding: 15px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.heading {
+  font-family: mortise;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 140%;
+  color: #100e3a;
+}
+
+.productsContainer {
+  display: flex;
+  margin-left: 2%;
+  margin-bottom: -2%;
+  width: 80vw;
+}
+.cartContainer {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartCount {
+  font-size: 11px;
+  color: crimson;
+  margin-left: 10px;
+}
+
+.scrollBarContainer {
+  overflow-y: scroll;
+  scrollbar-width: 50%;
+  height: 80vh;
+  width: 15vw;
+  margin-left: -1%;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.mobileScroller {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .scrollBarContainer {
+    overflow-x: scroll;
+    display: flex;
+    height: 12vh;
+    width: 100vw;
+    font-size: 5px;
+  }
+  .mobileIcon {
+    background-color: #b6bac3;
+    height: 6vh;
+    margin: 3px;
+    border-radius: 3px;
+    padding: 2px;
+    font-size: 6px;
+  }
+  .mobileScroller {
+    display: flex;
+  }
+  .productsContainer {
+    display: flex;
+
+    margin-bottom: -2%;
+    width: 100vw;
+  }
+  .highlight {
+    background-color: white;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContainer {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    box-sizing: border-box;
+    padding: 15px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.highlight {
+  background-color: #5da9e9;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.category {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+  color: #100e3a;
+  margin-left: 2%;
+  margin-bottom: -0.8%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
